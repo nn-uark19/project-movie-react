@@ -4,4 +4,9 @@
 Hoang
 - learn git
    https://www.youtube.com/watch?v=LemSseuZB9I&list=PL86ehqHzxhy4XX_qZZE_5mrp38WGZRzTO&index=2
-Nghia is clever
+- set up index page for the movie website
+- learn react
+
+smart Nghia
+- figure out connection express-react 
+- learn react

@@ -1,0 +1,7 @@
+# GitHub url: https://github.com/nnguyen-uark/project-best-movie-website
+
+# private files
+
+#System files
+.DS_Store
+node_modules

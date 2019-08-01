@@ -1,16 +1,12 @@
 // import nesscessary libraries, files
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter} from "react-router-dom";
+import App from './App';
 
-class App extends React.Component {  
-  render() {
-    console.log('function render()- class App');
-    return (
-      <div>
-        <h1>function render()- class App</h1>
-        <About />
-        <Contact />
-        <Movies />
-      </div>
-    );
-  }
-}
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.querySelector("#root")
+);

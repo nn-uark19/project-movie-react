@@ -1,3 +1,5 @@
+import React from 'react';
+
 class About extends React.Component {
   render() {
     console.log('function render()- class About');
@@ -6,3 +8,4 @@ class About extends React.Component {
     </div>;
   }
 }
+export default About;

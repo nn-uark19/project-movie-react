@@ -3,6 +3,7 @@ PROJECT FILE STRUCTURE
 - main files
 /public/index.html
 /src/index.js
+/src/App.js
 - sub components
 /src/About.js
 /src/Contact.js

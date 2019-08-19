@@ -19,6 +19,7 @@ class SearchBar extends Component {
     console.log('class SearchBar- function handleSubmit()');
     e.preventDefault();
     this.props.childData(this.state.query);
+    this.setState({query: ''});
   }
 
   render() {

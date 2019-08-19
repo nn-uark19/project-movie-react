@@ -1,6 +1,6 @@
 .Footer {
   /* position */
-  position:fixed;
+  /* position:fixed; */
   bottom:0;
   width:100%;
   height:65px;   /* Height of the footer */  
@@ -13,8 +13,7 @@
 }
 
 .Footer-text {
-  padding: 40px 0 0 0;
-  position: fixed;
+  padding: 20px 0 0 0;
 }
 
 .Footer-logo {

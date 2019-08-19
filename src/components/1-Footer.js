@@ -10,7 +10,7 @@ export class Footer extends Component {
     return (
       <div className='Footer'>
         <img className='Footer-logo float-left' src={tmdbImg} alt='tmdb logo' />
-        <span className='Footer-text'>Created by Bootstrap v4.3</span>
+        <span className='Footer-text d-block'>Created with Bootstrap v4.3</span>
       </div>
     );
   }

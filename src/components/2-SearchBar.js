@@ -19,30 +19,23 @@ class SearchBar extends Component {
     console.log('class SearchBar- function handleSubmit()');
     e.preventDefault();
     this.props.childData(this.state.query);
-    this.setState({query: ''});
+    this.setState({ query: '' });
   }
 
   render() {
     console.log('class SearchBar- function render()');
     return (
       <div className='SearchBar'>
-        <div className='row'>
-          <div className='col-xs-12 col-sm-5 text-right SearchBar-welcome'>
-            Website logo
-          </div>
-          <div className='col-xs-12 col-sm-7'>
-            <form onSubmit={this.handleSubmit} className='form-group'>
-              <input
-                name='query'
-                type='text'
-                placeholder='Search Movie Title...'
-                onChange={this.handleChange}
-                value={this.state.query}
-                className='form-control SearchBar-input'
-              />
-            </form>
-          </div>
-        </div>
+        <form onSubmit={this.handleSubmit} className='form-group'>
+          <input
+            name='query'
+            type='text'
+            placeholder='Search Movie Title...'
+            onChange={this.handleChange}
+            value={this.state.query}
+            className='form-control SearchBar-input text-center'
+          />
+        </form>
       </div>
     );
   }

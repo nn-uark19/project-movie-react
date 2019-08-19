@@ -1,21 +1,28 @@
-.form-control {
-  animation: fadein ease-in 0.5s;
+.form-control {  
   border: none !important;
 }
 
-
 .SearchBar-input {
+  margin: 0 auto 50px auto;
   width: 40% !important;
-  margin: 0 0 4rem 0;
   background-color: black !important;
   border-bottom: solid 1px white !important;
-  outline: none !important; 
 }
 
 input, select, textarea{
   color: white !important;
 }
 
-.SearchBar-welcome {
-  padding: 10px 50px 0 0 !important;
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .SearchBar-input {
+    width: 90% !important;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .SearchBar-input {
+    width: 40% !important;
+  }
 }

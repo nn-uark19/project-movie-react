@@ -1,10 +1,7 @@
 .MovieCard {
-  /* border: 1px solid red; */
-  width: 60%;
   margin: 0 auto;
-  /* min-height: 40px; */
   margin-bottom: 3rem;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -23,5 +20,26 @@
 
 .MovieCard-detail {
   margin-top: 2rem;
-  font-family: Oswald,sans-serif;
+  font-family: Oswald, sans-serif;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 991.98px) {
+  .MovieCard {
+    width: 90%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 992px) {
+  .MovieCard {
+    width: 60%;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .MovieCard {
+    width: 40%;
+  }
 }

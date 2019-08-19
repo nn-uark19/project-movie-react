@@ -9,6 +9,15 @@ import genres from './3-genre';
 var hasPoster, posterUrl;
 
 export class MovieCard extends Component {
+  getGenreList(genreList) {
+    console.log('class MovieCard- function getGenreList()');
+    let genReturn = [];
+    genreList.forEach((genId, idx) => {
+      console.log(genId);
+      console.log(genres[genId]);
+    });
+  }
+
   render() {
     console.log('class MovieCard- function render()');
     // poster
@@ -17,6 +26,7 @@ export class MovieCard extends Component {
       hasPoster === true
         ? 'https://image.tmdb.org/t/p/w500' + this.props.posterUrl
         : noPhoto;
+    var genList = this.getGenreList(this.props.genreList);
 
     return (
       <div className='MovieCard'>
@@ -62,15 +72,5 @@ export class MovieCard extends Component {
     );
   }
 }
-
-// key={m.id}
-// title={m.original_title}
-// title2={m.title}
-// description={m.overview}
-// popularity={m.popularity}
-// posterUrl={m.poster_path}
-// releaseDate={m.release_date}
-// voteAvg={m.vote_average}
-// voteCount={m.vote_count}
 
 export default MovieCard;

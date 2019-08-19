@@ -2,7 +2,7 @@ import React from 'react';
 // component
 import SearchBar from './2-SearchBar';
 import MovieCard from './2-MovieCard';
-import './1-Movies.css';
+import ScrollUpButton from "react-scroll-up-button";
 // package
 const axios = require('axios');
 
@@ -61,7 +61,7 @@ class Movies extends React.Component {
         {/* get back search term, open up API to search */}{' '}
         <SearchBar childData={this.childData} />
         {/* display list of movie */}{' '}
-        <p className='text-center'>Search result for {this.state.query}</p>
+        <h3 className='text-center'>Search result for "{this.state.query}"</h3>
         {this.state.movieList.map(m => (
           <MovieCard
             key={m.id}
@@ -76,6 +76,7 @@ class Movies extends React.Component {
             genreList = {m.genre_ids}
           />
         ))}
+        <ScrollUpButton />
       </div>
     );
   }

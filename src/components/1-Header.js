@@ -7,8 +7,8 @@ class Header extends React.Component {
   render() {
     console.log('class Header- function render()');
     return (
-      <div>
-        <nav className='fixed-top navbar navbar-expand-md navbar-dark bg-dark'>
+      <div className='Header'>
+        <nav className='fixed-top navbar navbar-expand-md navbar-dark Header-background'>
           <div className='container'>
             <Link to='/' className='navbar-brand'>
               <i className='fas fa-film mr-2' /> 

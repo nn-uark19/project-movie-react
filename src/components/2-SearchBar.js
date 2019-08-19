@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './2-SearchBar.css';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -23,17 +24,24 @@ class SearchBar extends Component {
   render() {
     console.log('class SearchBar- function render()');
     return (
-      <div className='SearchBar text-center'>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            name='query'
-            type='text'
-            placeholder='Search Movie Title...'
-            onChange={this.handleChange}
-            value={this.state.query}
-          />
-          <button>Search</button>
-        </form>
+      <div className='SearchBar'>
+        <div className='row'>
+          <div className='col-xs-12 col-sm-5 text-right SearchBar-welcome'>
+            Website logo
+          </div>
+          <div className='col-xs-12 col-sm-7'>
+            <form onSubmit={this.handleSubmit} className='form-group'>
+              <input
+                name='query'
+                type='text'
+                placeholder='Search Movie Title...'
+                onChange={this.handleChange}
+                value={this.state.query}
+                className='form-control SearchBar-input'
+              />
+            </form>
+          </div>
+        </div>
       </div>
     );
   }

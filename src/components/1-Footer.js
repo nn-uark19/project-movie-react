@@ -9,8 +9,8 @@ export class Footer extends Component {
     console.log('class Footer- function render()');
     return (
       <div className='Footer'>
+        <img className='Footer-logo float-left' src={tmdbImg} alt='tmdb logo' />
         <span className='Footer-text'>Created by Bootstrap v4.3</span>
-        <img className='Footer-logo float-right' src={tmdbImg} alt='tmdb logo' />
       </div>
     );
   }

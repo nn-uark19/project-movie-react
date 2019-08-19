@@ -1,0 +1,21 @@
+.form-control {
+  animation: fadein ease-in 0.5s;
+  border: none !important;
+}
+
+
+.SearchBar-input {
+  width: 40% !important;
+  margin: 0 0 4rem 0;
+  background-color: black !important;
+  border-bottom: solid 1px white !important;
+  outline: none !important; 
+}
+
+input, select, textarea{
+  color: white !important;
+}
+
+.SearchBar-welcome {
+  padding: 10px 50px 0 0 !important;
+}

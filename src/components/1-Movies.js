@@ -10,7 +10,7 @@ class Movies extends React.Component {
   constructor(props) {
     console.log('class Movies- constructor()');
     super(props);
-    this.state = { query: 'thousand words', movieList: [] };
+    this.state = { query: 'night at the museum', movieList: [] };
     this.childData = this.childData.bind(this);
     this.movieApi = axios.create({
       baseURL: 'https://api.themoviedb.org/3/search/movie',
@@ -61,7 +61,7 @@ class Movies extends React.Component {
         {/* get back search term, open up API to search */}{' '}
         <SearchBar childData={this.childData} />
         {/* display list of movie */}{' '}
-        <p>Search result for {this.state.query}</p>
+        <p className='text-center'>Search result for {this.state.query}</p>
         {this.state.movieList.map(m => (
           <MovieCard
             key={m.id}
@@ -73,6 +73,7 @@ class Movies extends React.Component {
             releaseDate={m.release_date}
             voteAvg={m.vote_average}
             voteCount={m.vote_count}
+            genreList = {m.genre_ids}
           />
         ))}
       </div>

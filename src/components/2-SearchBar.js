@@ -23,7 +23,7 @@ class SearchBar extends Component {
   render() {
     console.log('class SearchBar- function render()');
     return (
-      <div className='SearchBar'>
+      <div className='SearchBar text-center'>
         <form onSubmit={this.handleSubmit}>
           <input
             name='query'

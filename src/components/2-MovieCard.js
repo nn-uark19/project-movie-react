@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// css
 import './2-MovieCard.css';
-// photo
 import noPhoto from './no-poster.jpg';
-// js file
 import genres from './3-genre';
 
 var hasPoster, posterUrl;
@@ -11,7 +8,7 @@ var hasPoster, posterUrl;
 export class MovieCard extends Component {
   getGenreList(genreList) {
     console.log('class MovieCard- function getGenreList()');
-    let genReturn = [];
+    // let genReturn = [];
     genreList.forEach((genId, idx) => {
       console.log(genId);
       console.log(genres[genId]);
@@ -26,7 +23,7 @@ export class MovieCard extends Component {
       hasPoster === true
         ? 'https://image.tmdb.org/t/p/w500' + this.props.posterUrl
         : noPhoto;
-    var genList = this.getGenreList(this.props.genreList);
+    // var genList = this.getGenreList(this.props.genreList);
 
     return (
       <div className='MovieCard'>

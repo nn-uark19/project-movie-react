@@ -5,6 +5,7 @@ import MovieCard from './2-MovieCard';
 import ScrollUpButton from "react-scroll-up-button";
 // package
 const axios = require('axios');
+require('dotenv').config();
 
 class Movies extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Movies extends React.Component {
     try {
       const response = await this.movieApi.get('', {
         params: {
-          api_key: '{api_key}',
+          api_key: process.env.REACT_APP_TMDB_API,
           query: this.state.query.replace(' ', '+')
         }
       });

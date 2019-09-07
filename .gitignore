@@ -2,7 +2,7 @@
 
 # private files
 z1-*
-
+.env
 
 #System files
 .DS_Store
